@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://s6ehh2d1ijdg"]
+[gd_scene load_steps=3 format=3 uid="uid://s6ehh2d1ijdg"]
 
+[ext_resource type="Script" path="res://SplashScreen.cs" id="1_fuuxb"]
 [ext_resource type="Texture2D" uid="uid://dwgh6iwd8y2qq" path="res://icon.svg" id="1_xrdiq"]
 
 [node name="SplashScreen" type="ColorRect"]
@@ -9,6 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.776471, 1, 1, 1)
+script = ExtResource("1_fuuxb")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -21,3 +23,8 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="CenterContainer"]
 layout_mode = 2
 texture = ExtResource("1_xrdiq")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
