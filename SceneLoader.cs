@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-// need to test logic
+// just a quick and dirty scene change
 public partial class scene_loader : Node
 {
 	[Export] private string _sceneFolder;
